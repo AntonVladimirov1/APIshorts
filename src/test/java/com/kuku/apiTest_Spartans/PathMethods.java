@@ -1,4 +1,4 @@
-package com.kuku.apiTest;
+package com.kuku.apiTest_Spartans;
 
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;

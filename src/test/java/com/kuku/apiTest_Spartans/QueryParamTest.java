@@ -1,4 +1,4 @@
-package com.kuku.apiTest;
+package com.kuku.apiTest_Spartans;
 
 import com.kuku.Utility.Hooks_Spartans;
 import io.restassured.RestAssured;

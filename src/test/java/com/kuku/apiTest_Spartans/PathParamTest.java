@@ -1,9 +1,8 @@
-package com.kuku.apiTest;
+package com.kuku.apiTest_Spartans;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
-import io.restassured.internal.path.json.JSONAssertion;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;

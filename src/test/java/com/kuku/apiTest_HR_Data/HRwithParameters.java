@@ -1,4 +1,4 @@
-package com.kuku.HR_Data;
+package com.kuku.apiTest_HR_Data;
 
 import com.kuku.Utility.Hooks_HR;
 import io.restassured.http.ContentType;
@@ -23,7 +23,7 @@ public class HRwithParameters extends Hooks_HR {
         response.prettyPrint();
 
         assertEquals(200,response.statusCode());
-        assertEquals("application/json",response.contentType());
+        assertEquals(ContentType.JSON.toString(),response.contentType());
         assertTrue(response.body().asString().contains("United States of America"));
 
     }
