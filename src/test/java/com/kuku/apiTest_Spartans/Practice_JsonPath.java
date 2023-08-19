@@ -9,6 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static io.restassured.RestAssured.*;
@@ -52,6 +53,12 @@ public class Practice_JsonPath extends Hooks_HR {
         assertEquals(200,response.statusCode());
 
         JsonPath jsonPath = response.jsonPath();
+
+        List<Map<String,Object>> employees = jsonPath.get("items");
+        for (Map<String, Object> employee : employees) {
+            System.out.println("employee = " + employee);
+        }
+
 
         List<Object> list = jsonPath.getList("items.email");
         //System.out.println(list);
