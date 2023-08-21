@@ -56,15 +56,30 @@ public class DeserializationToCollection extends Hooks_Spartans {
                 .contentType("application/json")
                 .extract().response();
 
-        // Approach 1 --> With response object
+        //* Approach 1 --> With response object
 
         List<Map<String,Object>> spartanList = response.as(List.class);
 
         //System.out.println("spartanList = " + spartanList);
 
-       for (Map<String, Object> map : spartanList) {  // iter - for better performance
-            System.out.println("map = " + map);
+      // for (Map<String, Object> map : spartanList) {  // iter - for better performance
+          //  System.out.println("map = " + map);
+      //  }
+
+       // how to find just any spartan info
+        System.out.println("spartanList.get(0) = " + spartanList.get(0));
+
+        // how to find specific spartan info (any key info)
+        System.out.println("spartanList.get(1).get(\"name\") = " + spartanList.get(1).get("name"));
+
+        //* Approach 2 --> JsonPath  ( I like this the most!!! )
+
+        JsonPath jsonPath = response.jsonPath();
+        List<Map<String,Object>> listSpartans = jsonPath.get("");
+        for (Map<String, Object> listSpartan : listSpartans) {
+            System.out.println("listSpartans = " + listSpartan);
         }
+        System.out.println("listSpartans = " + listSpartans);
 
     }
 }

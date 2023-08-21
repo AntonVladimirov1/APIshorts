@@ -21,15 +21,26 @@
             <artifactId>rest-assured</artifactId>
             <version>5.3.1</version>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.10.0</version>
         </dependency>
+
+        <!-- For deserialization, we need to add one ObjectMapper like JACKSON or GSON  (POJO - Plain Old Java Objects) -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.15.1</version>
         </dependency>
+
+        <!-- Lombok - instead of getter/setter/constructor we can use annotations "@Getter", "@Setter", "@ToString" - @Data(combines all of that) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+        </dependency>
+
     </dependencies>
 </project>
