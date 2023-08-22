@@ -1,19 +1,15 @@
-package com.kuku.Deserialization;
+package com.kuku.Deserialization_Pojo;
 
 import com.kuku.POJO.Spartan;
-import com.kuku.POJO.SpartanSearch;
 import com.kuku.Utility.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Pojo_Spartans extends Hooks_Spartans {
