@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
                         /// LOMBOK
+
 @Data  // creates getter/setter/toString - behind the seen
 @JsonIgnoreProperties(ignoreUnknown = true) // it ignores fields that we don't need
 

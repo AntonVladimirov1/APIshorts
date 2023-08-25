@@ -22,13 +22,13 @@ public class students extends Hooks_Cydeo {
         JsonPath jsonPath = response.jsonPath();
 
         Object name = jsonPath.get("students[0].firstName");
-        System.out.println("name = " + name);
+
         Object batch = jsonPath.getInt("students[0].batch");
-        System.out.println("batch = " + batch);
+
         Object companyName = jsonPath.get("students[0].company.companyName");
-        System.out.println("companyName = " + companyName);
+
         Object emailAddress = jsonPath.get("students[0].contact.emailAddress");
-        System.out.println("emailAddress = " + emailAddress);
+
 
         assertEquals("Mark",name);
         assertEquals(13,batch);
