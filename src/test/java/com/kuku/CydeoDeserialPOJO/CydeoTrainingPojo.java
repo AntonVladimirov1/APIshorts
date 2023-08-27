@@ -46,7 +46,6 @@ public class CydeoTrainingPojo extends Hooks_Cydeo {
 
     }
 
-
     @Test
     public void test2() {
 
@@ -82,6 +81,25 @@ public class CydeoTrainingPojo extends Hooks_Cydeo {
         assertEquals("mark@email.com",student.getContact().getEmailAddress());
         assertEquals("777 5th Ave",student.getCompany().getAddress().getStreet());
         assertEquals(33222,student.getCompany().getAddress().getZipCode());
+
+    }
+
+    @Test
+    public void test3() {
+
+        Response response = given().log().uri()
+                .accept(ContentType.JSON)
+                .pathParam("id",2)
+                .when().get("/student/{id}");
+        assertEquals(200,response.statusCode());
+
+        JsonPath jsonPath = response.jsonPath();
+
+        com.kuku.POJO.ready.Student student = jsonPath.getObject("students[0]", com.kuku.POJO.ready.Student.class);
+
+        System.out.println("student.JoinDate() = " + student.getJoinDate());
+        System.out.println("student.startDate = " + student.getCompany().startDate);
+        System.out.println("student.City() = " + student.getCompany().getAddress().getCity());
 
     }
 

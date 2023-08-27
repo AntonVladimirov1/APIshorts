@@ -1,6 +1,7 @@
 package com.kuku.Deserialization_Pojo;
 
 import com.kuku.POJO.Spartan;
+import com.kuku.POJO.SpartanSearch;
 import com.kuku.Utility.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -75,7 +76,7 @@ public class Pojo_Spartans extends Hooks_Spartans {
                 .statusCode(200)
                 .extract().response();
 
-        Spartan search = response.as(Spartan.class); //* <------
+        SpartanSearch search = response.as(SpartanSearch.class); //* <------
 
         System.out.println("search.getTotalElement() = " + search.getTotalElement());
         System.out.println("search.getContent().get(2) = " + search.getContent().get(2));
