@@ -1,0 +1,29 @@
+{
+  "title": "SingeSpartan",
+  "description": "Auto generated JSON schema based on the 'SingeSpartan' file",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "gender": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "number",
+          "minLength": 5,
+          "maxLength": 10
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "number"
+        }
+      }
+    },
+    "success": {
+      "type": "string"
+    }
+  }
+}
