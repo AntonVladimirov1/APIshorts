@@ -12,15 +12,11 @@ import java.util.Map;
 
 public class MethodSourceTest {
 
-    @ParameterizedTest
-    @MethodSource("getNames")
-    public void test1(String name) {
-        System.out.println("name = " + name);
-    }
 
     @ParameterizedTest
     @MethodSource("getExcelData")
     public void test2(Map<String,String> userInfo){
+
         System.out.println("userInfo = " + userInfo);
         System.out.println("Name = " + userInfo.get("Name"));
         System.out.println("Email = " + userInfo.get("Email"));
@@ -34,6 +30,12 @@ public class MethodSourceTest {
     }
 
                 // <----------EXAMPLE------------>
+
+    @ParameterizedTest
+    @MethodSource("getNames")
+    public void test1(String name) {
+        System.out.println("name = " + name);
+    }
 
     public static List<String> getNames(){
 
