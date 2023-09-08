@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Request_ResponseSpec_2 extends Hooks_Spartans {
+public class Request_Spec extends Hooks_Spartans {
 
     RequestSpecification requestSpecification;
 

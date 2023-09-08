@@ -10,10 +10,10 @@ import static io.restassured.RestAssured.given;
 
 public class BookItUtils3 {
 
-    public static String getToken(String userType){
+   /* public static String getToken(String userType){
 
         String accessToken = given()
-                .queryParams(credentialsByUserType(userType))
+                .queryParams(credByUserType(userType))
                 .when()
                 .get("/sign")
                 .then()
@@ -23,7 +23,9 @@ public class BookItUtils3 {
         return  accessToken;
     }
 
-    public static Map<String,String> credentialsByUserType(String userType){
+    */
+
+    public static String getTokenByUserType(String userType){
 
         userType = userType.replace(" ","_");
 
@@ -33,7 +35,7 @@ public class BookItUtils3 {
        /* String email = "";
         String password = "";
 
-        switch (role) {
+        switch (userType) {
             case "teacher":
                 email = Environment.TEACHER_EMAIL;
                 password = Environment.TEACHER_PASSWORD;
@@ -47,6 +49,8 @@ public class BookItUtils3 {
                 email = Environment.LEADER_EMAIL;
                 password = Environment.LEADER_PASSWORD;
                 break;
+            default:
+            throw new RuntimeException("Invalid userType Entry :\n>> " + userType+ " <<");
 
         */
 
@@ -54,7 +58,12 @@ public class BookItUtils3 {
         credentials.put("email",email);
         credentials.put("password",password);
 
-        return credentials;
+        String accessToken = given()
+                .queryParams(credentials)
+                .when()
+                .get("/sign").path("accessToken");
+
+        return  accessToken;
     }
 
 }

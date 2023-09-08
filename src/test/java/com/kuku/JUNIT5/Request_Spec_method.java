@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 
-public class Request_ResponseSpec extends Hooks_Spartans {
+public class Request_Spec_method extends Hooks_Spartans {
 
 
     public static RequestSpecification getRequestSpec(){

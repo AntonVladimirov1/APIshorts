@@ -12,7 +12,7 @@ public class Auth_withBearerToken2 extends Hooks_BookIt {
 
     //String email = "lfinnisz@yolasite.com";
     //String password = "lissiefinnis";
-    String accessToken = BookItUtils3.getToken("team leader");
+    String accessToken = BookItUtils3.getTokenByUserType("team leader");
 
     @Test
     public void test1() { //    "/api/campuses"
