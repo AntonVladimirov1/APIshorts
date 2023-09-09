@@ -1,4 +1,4 @@
-package com.kuku.JUNIT5.Hooks;
+package com.kuku.Hooks;
 
 import com.kuku.Utility.BookItUtils3;
 import io.restassured.http.ContentType;

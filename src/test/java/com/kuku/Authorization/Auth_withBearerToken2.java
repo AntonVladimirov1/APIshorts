@@ -1,7 +1,7 @@
 package com.kuku.Authorization;
 
 import com.kuku.Utility.BookItUtils3;
-import com.kuku.JUNIT5.Hooks.Hooks_BookIt;
+import com.kuku.Hooks.Hooks_BookIt;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 

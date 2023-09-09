@@ -1,6 +1,6 @@
 package com.kuku.Sundays;
 
-import com.kuku.JUNIT5.Hooks.Hooks_Fruit;
+import com.kuku.Hooks.Hooks_Fruit;
 
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;

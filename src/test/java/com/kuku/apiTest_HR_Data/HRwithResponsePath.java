@@ -1,6 +1,6 @@
 package com.kuku.apiTest_HR_Data;
 
-import com.kuku.JUNIT5.Hooks.Hooks_HR;
+import com.kuku.Hooks.Hooks_HR;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;

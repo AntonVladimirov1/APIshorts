@@ -1,6 +1,6 @@
 package com.kuku.XML_Performance_JsonSchema;
 
-import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
+import com.kuku.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.jupiter.api.Test;

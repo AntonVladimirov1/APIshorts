@@ -1,6 +1,6 @@
 package com.kuku.apiTest_Spartans;
 
-import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
+import com.kuku.Hooks.Hooks_Spartans;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

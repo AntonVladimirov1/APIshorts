@@ -1,6 +1,6 @@
 package com.kuku.HamCrest_Matchers;
 
-import com.kuku.JUNIT5.Hooks.Hooks_HR;
+import com.kuku.Hooks.Hooks_HR;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Assertions;

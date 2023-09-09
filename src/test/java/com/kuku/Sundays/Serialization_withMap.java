@@ -1,6 +1,6 @@
 package com.kuku.Sundays;
 
-import com.kuku.JUNIT5.Hooks.Hooks_Fruit;
+import com.kuku.Hooks.Hooks_Fruit;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;

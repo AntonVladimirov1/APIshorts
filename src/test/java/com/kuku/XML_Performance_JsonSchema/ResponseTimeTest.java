@@ -1,6 +1,6 @@
 package com.kuku.XML_Performance_JsonSchema;
 
-import com.kuku.JUNIT5.Hooks.Hooks_SpartanAuth;
+import com.kuku.Hooks.Hooks_SpartanAuth;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;

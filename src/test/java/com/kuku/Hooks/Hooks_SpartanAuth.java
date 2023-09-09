@@ -1,16 +1,16 @@
-package com.kuku.JUNIT5.Hooks;
+package com.kuku.Hooks;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.reset;
 
-public abstract class Hooks_HR {
+public class Hooks_SpartanAuth {
 
     @BeforeAll
-    public static void initHR(){
-        baseURI="http://54.82.83.115:1000/ords/hr";  // HR Ords
+    public static void initSpartans(){
+        baseURI="http://54.82.83.115:7000";  // Spartan
     }
 
     @AfterAll

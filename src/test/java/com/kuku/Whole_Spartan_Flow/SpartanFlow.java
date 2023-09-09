@@ -1,6 +1,6 @@
 package com.kuku.Whole_Spartan_Flow;
 
-import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
+import com.kuku.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.MethodOrderer;

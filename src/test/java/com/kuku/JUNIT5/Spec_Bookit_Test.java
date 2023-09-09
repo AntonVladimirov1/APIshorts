@@ -1,6 +1,6 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.JUNIT5.Hooks.Hooks_BookIt;
+import com.kuku.Hooks.Hooks_BookIt;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
@@ -20,7 +20,5 @@ public class Spec_Bookit_Test extends Hooks_BookIt {
             .then()
                 //.statusCode(200).contentType(ContentType.JSON);
                 .spec(dynamResSpec(200));
-
-
     }
 }

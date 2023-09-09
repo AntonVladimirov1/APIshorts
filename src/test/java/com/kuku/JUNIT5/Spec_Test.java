@@ -1,6 +1,6 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.JUNIT5.Hooks.Hooks_NewSpartansAuth;
+import com.kuku.Hooks.Hooks_NewSpartansAuth;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
