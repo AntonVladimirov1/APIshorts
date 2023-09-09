@@ -2,7 +2,7 @@ package com.kuku.CydeoDeserialPOJO;
 
 import com.kuku.POJO.Student;
 import com.kuku.POJO.Students;
-import com.kuku.Utility.Hooks_Cydeo;
+import com.kuku.JUNIT5.Hooks.Hooks_Cydeo;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

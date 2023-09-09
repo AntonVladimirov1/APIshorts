@@ -1,14 +1,10 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.Utility.Hooks_NewSpartansAuth;
+import com.kuku.JUNIT5.Hooks.Hooks_NewSpartansAuth;
 import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.MatcherAssert.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.Matchers.*;
 
 public class Spec_Test extends Hooks_NewSpartansAuth {

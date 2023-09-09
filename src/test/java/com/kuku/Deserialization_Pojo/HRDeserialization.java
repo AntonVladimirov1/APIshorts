@@ -1,6 +1,6 @@
 package com.kuku.Deserialization_Pojo;
 
-import com.kuku.Utility.Hooks_HR;
+import com.kuku.JUNIT5.Hooks.Hooks_HR;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

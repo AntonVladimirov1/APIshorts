@@ -1,10 +1,8 @@
 package com.kuku.Sundays;
 
-import com.kuku.Utility.Hooks_Fruit;
+import com.kuku.JUNIT5.Hooks.Hooks_Fruit;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import io.restassured.http.ContentType;

@@ -2,10 +2,13 @@ package com.kuku.Utility;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static io.restassured.RestAssured.expect;
 import static io.restassured.RestAssured.given;
 
 public class BookItUtils3 {
@@ -64,6 +67,17 @@ public class BookItUtils3 {
                 .get("/sign").path("accessToken");
 
         return  accessToken;
+    }
+
+    public static RequestSpecification dynamicReqSpec(String userType){
+        return given().log().all()
+                .accept(ContentType.JSON)
+                .auth().oauth2(BookItUtils3.getTokenByUserType(userType));
+    }
+
+    public static ResponseSpecification dynamResSpec(int statCode){
+        return expect().statusCode(statCode)
+                .contentType(ContentType.JSON);
     }
 
 }

@@ -1,8 +1,6 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.Utility.BookItUtils3;
-import com.kuku.Utility.Hooks_BookIt;
-import io.restassured.http.ContentType;
+import com.kuku.JUNIT5.Hooks.Hooks_BookIt;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;

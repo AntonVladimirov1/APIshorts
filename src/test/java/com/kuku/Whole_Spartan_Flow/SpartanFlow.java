@@ -1,7 +1,6 @@
 package com.kuku.Whole_Spartan_Flow;
 
-import com.kuku.POJO.Spartan;
-import com.kuku.Utility.Hooks_Spartans;
+import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.MethodOrderer;
@@ -13,8 +12,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

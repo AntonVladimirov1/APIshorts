@@ -1,6 +1,6 @@
 package com.kuku.HamCrest_Matchers;
 
-import com.kuku.Utility.Hooks_HR;
+import com.kuku.JUNIT5.Hooks.Hooks_HR;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Assertions;
@@ -11,7 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 public class HamCrestHR extends Hooks_HR {

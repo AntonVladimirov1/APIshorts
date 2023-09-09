@@ -1,6 +1,6 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.Utility.Hooks_NewSpartansAuth;
+import com.kuku.JUNIT5.Hooks.Hooks_NewSpartansAuth;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 

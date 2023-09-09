@@ -1,12 +1,12 @@
 package com.kuku.Sundays;
 
-import com.kuku.Utility.BookItUtils;
+import com.kuku.Utility.BookItUtils1;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 
-public class Auth_withBearerToken extends BookItUtils {
+public class Auth_withBearerToken extends BookItUtils1 {
 
     @Test
     public void test() {

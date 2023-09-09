@@ -1,6 +1,6 @@
 package com.kuku.Sundays;
 
-import com.kuku.Utility.Hooks_SpartanAuth;
+import com.kuku.JUNIT5.Hooks.Hooks_SpartanAuth;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;

@@ -1,6 +1,6 @@
 package com.kuku.JUNIT5;
 
-import com.kuku.Utility.Hooks_Spartans;
+import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.Test;

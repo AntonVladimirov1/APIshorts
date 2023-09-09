@@ -1,6 +1,6 @@
 package com.kuku.apiTest_CydeoTraining;
 
-import com.kuku.Utility.Hooks_Cydeo;
+import com.kuku.JUNIT5.Hooks.Hooks_Cydeo;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;

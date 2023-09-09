@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import static io.restassured.RestAssured.*;
 
-public class BookItUtils {
+public class BookItUtils1 {
 
     protected static String token;
 

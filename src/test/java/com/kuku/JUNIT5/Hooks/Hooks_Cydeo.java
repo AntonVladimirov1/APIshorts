@@ -1,16 +1,16 @@
-package com.kuku.Utility;
+package com.kuku.JUNIT5.Hooks;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.reset;
 
-public abstract class Hooks_Spartans {
+public abstract class Hooks_Cydeo {
 
     @BeforeAll
-    public static void initSpartans(){
-        baseURI="http://54.82.83.115:8000";  // Spartan
+    public static void initCydeo(){
+
+        baseURI= "https://api.training.cydeo.com";
     }
 
     @AfterAll

@@ -1,14 +1,13 @@
 package com.kuku.POST_PUT_PATCH_DELETE;
 
 import com.kuku.POJO.Spartan;
-import com.kuku.Utility.Hooks_Spartans;
+import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

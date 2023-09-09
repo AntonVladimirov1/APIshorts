@@ -3,7 +3,7 @@ package com.kuku.apiTest_Spartans;
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.kuku.Utility.Hooks_Spartans;
+import com.kuku.JUNIT5.Hooks.Hooks_Spartans;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;

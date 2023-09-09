@@ -1,4 +1,4 @@
-package com.kuku.Utility;
+package com.kuku.JUNIT5.Hooks;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
