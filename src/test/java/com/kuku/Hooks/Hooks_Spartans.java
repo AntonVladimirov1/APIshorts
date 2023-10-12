@@ -14,7 +14,7 @@ public abstract class Hooks_Spartans {
 
     @BeforeAll
     public static void initSpartans(){
-        baseURI="http://54.82.83.115:8000";  // Spartan
+        baseURI="http://52.91.163.234:8000";  // Spartan
     }
 
     @AfterAll

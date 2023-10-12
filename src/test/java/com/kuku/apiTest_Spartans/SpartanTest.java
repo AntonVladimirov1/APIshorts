@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class SpartanTest {
 
-    String spartanBaseURL = "http://54.82.83.115:8000";
+    String spartanBaseURL = "http://52.91.163.234:8000";
 
     @Test
     public void getAllSpartan(){

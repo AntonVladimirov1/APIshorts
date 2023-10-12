@@ -1,7 +1,9 @@
 package com.kuku.JUNIT5;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Junit5Assertions {
 
@@ -22,10 +24,11 @@ public class Junit5Assertions {
     @Test
     public void softAssert() {
 
-        assertAll("Soft Assert",
-                ()->assertEquals(10,5+5),
-                ()->assertEquals(10,5+3),
-                ()->assertEquals(10,5+4));
+
+        assertAll("Soft Assert",      // lambda expression ()->
+                ()->assertEquals(10,5+5,"1 assert"),
+                ()->assertEquals(10,5+3,"2 assert"),
+                ()->assertEquals(10,5+4,"3 assert"));
 
     }
 }
