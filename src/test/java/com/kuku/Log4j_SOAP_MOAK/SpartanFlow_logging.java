@@ -8,6 +8,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -17,8 +18,8 @@ import static org.hamcrest.Matchers.*;
 public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in Hooks_Spartans
 
     static int spartanID;
-    static Spartan spartanPost ;
-    static Spartan spartanPut ;
+    static Spartan spartanPost;
+    static Spartan spartanPut;
 
     @Order(1)
     @Test
@@ -29,7 +30,7 @@ public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in 
         spartanPost.setGender("Male");
         spartanPost.setPhone(8877445596l);
 
-        log.info("POST SPARTAN ---> "+ spartanPost);
+        log.info("POST SPARTAN ---> " + spartanPost);
 
         spartanID = given().accept(ContentType.JSON)
                 .contentType(ContentType.JSON)
@@ -56,7 +57,7 @@ public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in 
                 .statusCode(200)
                 .body("name", is(spartanPost.getName())).extract().response();
 
-        log.info("GET SPARTAN --> "+response.asString());
+        log.info("GET SPARTAN --> " + response.asString());
     }
 
     @Order(3)
@@ -68,7 +69,7 @@ public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in 
         spartanPut.setGender("Male");
         spartanPut.setPhone(8877445596l);
 
-        log.info("PUT SPARTAN --> "+spartanPut);
+        log.info("PUT SPARTAN --> " + spartanPut);
 
         given()
                 .contentType(ContentType.JSON)
@@ -95,7 +96,7 @@ public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in 
                 .statusCode(200)
                 .body("name", is(spartanPut.getName())).extract().response();
 
-        log.info("GET SPARTAN --> "+response.asString());
+        log.info("GET SPARTAN --> " + response.asString());
     }
 
     @Order(5)
@@ -125,7 +126,7 @@ public class SpartanFlow_logging extends Hooks_Spartans {  // logging object in 
 
         System.out.println(spartanID + " is not exist");
 
-        log.info("GET SPARTAN is NOT FOUND --> "+response.asString());
+        log.info("GET SPARTAN is NOT FOUND --> " + response.asString());
         log.info(spartanID + " is not exist");
     }
 
